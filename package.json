@@ -1,7 +1,8 @@
 {
   "name": "reveal-opened-file",
   "displayName": "Reveal Opened File",
-  "description": "",
+  "description": "Reveal the opened file in explorer with one click",
+  "repository": "https://github.com/Iancovski/reveal-opened-file",
   "version": "1.0.0",
   "engines": {
     "vscode": "^1.89.0"
