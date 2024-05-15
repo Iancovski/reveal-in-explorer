@@ -2,7 +2,7 @@
   "name": "reveal-in-explorer",
   "displayName": "Reveal in Explorer",
   "description": "Reveal the opened file in explorer with one click",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "icon": "./assets/icon.png",
   "publisher": "Iancovski",
   "homepage": "https://github.com/Iancovski/reveal-in-explorer",
