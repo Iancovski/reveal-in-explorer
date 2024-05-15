@@ -1,18 +1,19 @@
 {
-  "name": "reveal-opened-file",
-  "displayName": "Reveal Opened File",
+  "name": "reveal-in-explorer",
+  "displayName": "Reveal in Explorer",
   "description": "Reveal the opened file in explorer with one click",
   "version": "1.0.0",
   "icon": "./assets/icon.png",
   "publisher": "Iancovski",
-  "homepage": "https://github.com/Iancovski/reveal-opened-file",
+  "homepage": "https://github.com/Iancovski/reveal-in-explorer",
   "license": "MIT",
   "keywords": [
     "reveal",
+    "explorer",
     "opened",
     "file",
-    "explorer",
-    "locate"
+    "locate",
+    "folder"
   ],
   "author": {
     "name": "Vinícius Iancovski",
@@ -20,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Iancovski/reveal-opened-file.git"
+    "url": "https://github.com/Iancovski/reveal-in-explorer.git"
   },
   "engines": {
     "vscode": "^1.89.0"
@@ -33,7 +34,7 @@
   "contributes": {
     "commands": [
       {
-        "command": "reveal-opened-file.reveal",
+        "command": "reveal-in-explorer.reveal",
         "title": "Reveal Opened File",
         "icon": "$(target)"
       }
@@ -41,7 +42,7 @@
     "menus": {
       "view/title": [
         {
-          "command": "reveal-opened-file.reveal",
+          "command": "reveal-in-explorer.reveal",
           "when": "view == workbench.explorer.fileView",
           "group": "navigation"
         }

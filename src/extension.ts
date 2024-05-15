@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
-    const disposable = vscode.commands.registerCommand('reveal-opened-file.reveal', () => {
+    const disposable = vscode.commands.registerCommand('reveal-in-explorer.reveal', () => {
         if (vscode.window.activeTextEditor &&
 			vscode.window.activeTextEditor.document.uri.scheme !== 'welcomePage'
         ) {
