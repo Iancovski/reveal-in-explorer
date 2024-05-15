@@ -1,0 +1,55 @@
+{
+  "name": "reveal-opened-file",
+  "displayName": "Reveal Opened File",
+  "description": "",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "reveal-opened-file.reveal",
+        "title": "Reveal Opened File",
+        "icon": "$(target)"
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "reveal-opened-file.reveal",
+          "when": "view == workbench.explorer.fileView",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npx eslint",
+    "lint": "npx eslint ./src --fix",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.2.0",
+    "@stylistic/eslint-plugin": "^2.1.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.89.0",
+    "@typescript-eslint/eslint-plugin": "^7.7.1",
+    "@typescript-eslint/parser": "^7.7.1",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.3.9",
+    "eslint": "^8.57.0",
+    "globals": "^15.2.0",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.9.0"
+  }
+}
