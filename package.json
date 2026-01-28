@@ -2,7 +2,7 @@
   "name": "reveal-in-explorer",
   "displayName": "Reveal in Explorer",
   "description": "Reveal the opened file in explorer with one click",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "icon": "./assets/icon.png",
   "publisher": "Iancovski",
   "homepage": "https://github.com/Iancovski/reveal-in-explorer",
@@ -32,6 +32,16 @@
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
+    "configuration": {
+      "title": "Reveal in Explorer",
+      "properties": {
+        "reveal-in-explorer.collapseOtherFolders": {
+          "type": "boolean",
+          "default": false,
+          "description": "When true, clicking 'Reveal Opened File' will collapse all other folders in the explorer, leaving only the path to the active file expanded."
+        }
+      }
+    },
     "commands": [
       {
         "command": "reveal-in-explorer.reveal",
